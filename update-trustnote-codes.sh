@@ -18,8 +18,8 @@ update_trustnote_pow_cleandb(){
     project_name="$2$3"
     echo "clean $project_name db"
 
-    rm -rf "$1/$project_name/trustnote*"
-    rm -rf "$1/$project_name/log*"
+    rm -rf "$1/$project_name/trustnote"*
+    rm -rf "$1/$project_name/log"*
 
     ls -l "$1/$project_name/"
 }
