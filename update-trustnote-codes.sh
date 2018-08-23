@@ -29,5 +29,11 @@ update_trustnote_pow(){
     update_trustnote_pow_cleandb "$2" "$3" "$4"
 }
 
-update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "1"
+for index in {1..9}
+do
+    update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "$index"
+done
+
+
 update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-headless" "10"
+update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-explorer" "1"
