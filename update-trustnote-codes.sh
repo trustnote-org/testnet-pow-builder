@@ -42,6 +42,9 @@ start_part_supernode(){
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "3"
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "4"
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "5"
+    #update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "6"
+    #update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "7"
+    #update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "8"
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "9"
 }
 
