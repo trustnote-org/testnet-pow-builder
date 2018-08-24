@@ -45,11 +45,8 @@ start_part_supernode(){
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "9"
 }
 
-#start_all_supernode
-start_part_supernode
-
-update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-headless" "10"
-update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-explorer" "1"
+start_all_supernode
+#start_part_supernode
 
 update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-headless" "10"
 update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-explorer" "1"

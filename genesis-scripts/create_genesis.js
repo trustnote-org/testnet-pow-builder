@@ -2,14 +2,14 @@
 "use strict";
 
 const fs = require('fs');
-const db = require('trustnote-common/db.js');
-const eventBus = require('trustnote-common/event_bus.js');
-const constants = require('trustnote-common/constants.js');
-var objectHash = require('trustnote-common/object_hash.js');
+const db = require('trustnote-pow-common/db.js');
+const eventBus = require('trustnote-pow-common/event_bus.js');
+const constants = require('trustnote-pow-common/constants.js');
+var objectHash = require('trustnote-pow-common/object_hash.js');
 var Mnemonic = require('bitcore-mnemonic');
-var ecdsaSig = require('trustnote-common/signature.js');
-var validation = require('trustnote-common/validation.js');
-var headlessWallet = require('trustnote-headless');
+var ecdsaSig = require('trustnote-pow-common/signature.js');
+var validation = require('trustnote-pow-common/validation.js');
+var headlessWallet = require('trustnote-pow-headless');
 
 const witness_budget = 1000000;
 const witness_budget_count = 8;
@@ -39,8 +39,8 @@ for (let address of allAddress) {           // initial the payment arrOutputs
 
 function createPayment(from_address){
     console.log('starting createPayment');
-    var composer = require('trustnote-common/composer.js');
-    var network = require('trustnote-common/network.js');
+    var composer = require('trustnote-pow-common/composer.js');
+    var network = require('trustnote-pow-common/network.js');
     var callbacks = composer.getSavingCallbacks({
         ifNotEnoughFunds: onError,
         ifError: onError,
@@ -142,8 +142,8 @@ var signer = {
 };
 
 function createGenesisUnit(witnesses, onDone) {
-    var composer = require('trustnote-common/composer.js');
-    var network = require('trustnote-common/network.js');
+    var composer = require('trustnote-pow-common/composer.js');
+    var network = require('trustnote-pow-common/network.js');
 
     var savingCallbacks = composer.getSavingCallbacks({
         ifNotEnoughFunds: onError,
