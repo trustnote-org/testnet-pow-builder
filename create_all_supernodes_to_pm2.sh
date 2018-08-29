@@ -4,7 +4,7 @@ pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode3/start.js 
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode4/start.js  --name supernode4
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode5/start.js  --name supernode5
 #pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode6/start.js  --name supernode6
-#pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode7/start.js  --name supernode7
+pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode7/start.js  --name supernode7
 #pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode8/start.js  --name supernode8
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode9/start.js  --name supernode9
 
