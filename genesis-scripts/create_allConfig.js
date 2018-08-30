@@ -78,8 +78,8 @@ function writedown(){
 		var item = configArray[i];
 
 		var dir;
-		//创建目录,前12个为witness,后面的为headless
-		if (i<12) {
+		//创建目录,前9个为witness,后面的为headless
+		if (i<9) {
 			witnessAddressArray.push(item['address']);
 			dir = '../../data/witness'+(i+1);
 		}
@@ -124,7 +124,7 @@ function writedown(){
 	});
 }
 
-for (var i = 0; i < 15; i++) {
+for (var i = 0; i < 12; i++) {
 	createWallet();
 }
 
