@@ -20,7 +20,7 @@ var genesisConfigData = {};
 var witnesses = [];
 var allAddress = [];
 var arrOutputs = [
-    {address: "IO3JFSLJQVS4GNWR6I4QYIPBYGIUF3ZF", amount: 0 } //第一笔，找零地址。
+    {address: "DE4TWPGWD2BH7DMIMMZIMRBWRZSRQF2D", amount: 0 } //第一笔，找零地址。
 ];
 
 var contenta = fs.readFileSync('../../data/allAddress.json');
@@ -49,8 +49,8 @@ function createPayment(from_address){
         }
     });
 
-    var from_address = "IO3JFSLJQVS4GNWR6I4QYIPBYGIUF3ZF";
-    var payee_address = "XIM76DRNUNFWPXPI5AGOCYNMA3IOXL7V";
+    var from_address = "DE4TWPGWD2BH7DMIMMZIMRBWRZSRQF2D";
+    var payee_address = "35IBRHWGTXLRJNRFRD2MIKTQSBJIIJBZ";
     var arrOutputs = [
         {address: from_address, amount: 0},      // the change
         {address: payee_address, amount: 100}  // the receiver
