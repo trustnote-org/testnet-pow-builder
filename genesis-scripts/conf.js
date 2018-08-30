@@ -8,7 +8,7 @@ exports.bLight = false;
 exports.database = {};
 //exports.storage = 'mysql';
 exports.WS_PROTOCOL = 'ws://';
-exports.hub = 'dev.mainchain.pow.trustnote.org:6616';
+exports.hub = 'test.mainchain.pow.trustnote.org:9191';
 exports.KEYS_FILENAME = 'keys.json';
 
 exports.storage = 'sqlite';
@@ -24,7 +24,7 @@ exports.KEYS_FILENAME = 'keys.json';
 //exports.LOG_FILENAME = '/dev/null';
 
 // this is for runnining RPC service only, see play/rpc_service.js
-exports.rpcInterface = 'dev.mainchain.pow.trustnote.org';
+exports.rpcInterface = 'test.mainchain.pow.trustnote.org';
 exports.rpcPort = '6552';
 
 // witness configuration
