@@ -9,7 +9,7 @@ var objectHash = require('trustnote-pow-common/object_hash.js');
 var Mnemonic = require('bitcore-mnemonic');
 var ecdsaSig = require('trustnote-pow-common/signature.js');
 var validation = require('trustnote-pow-common/validation.js');
-var headlessWallet = require('trustnote-pow-headless');
+var headlessWallet = require('../start');
 
 const witness_budget = 1000000;
 const witness_budget_count = 8;
