@@ -10,8 +10,10 @@ exports.COUNT_MC_BALLS_FOR_PAID_WITNESSING = 100;
 exports.version = '1.0';
 exports.alt = '1';
 
-exports.GENESIS_UNIT = 'Ffrmbl8JSMhkflvwiH7Cfo8xs/oX1bRcda38IVUhtEo=';
+exports.GENESIS_UNIT = 'plWz2a9aLp+7fQ21ODAqh4FY87jf+MVnsgPhSsAr/Ls=';
 exports.BLACKBYTES_ASSET = '9qQId3BlWRQHvVy+STWyLKFb3lUd0xfQhX6mPVEHC2c=';
+// Pow add
+exports.FOUNDATION_ADDRESS = "JNA6YWLKFQG7PFF6F32KTXBUAHRAFSET";
 
 exports.HASH_LENGTH = 44;
 exports.PUBKEY_LENGTH = 44;

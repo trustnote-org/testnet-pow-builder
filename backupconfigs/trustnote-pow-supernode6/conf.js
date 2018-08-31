@@ -8,8 +8,8 @@ exports.WS_PROTOCOL = 'ws://';
 exports.pushApiProjectNumber = 0;
 exports.pushApiKey = '';
 
-exports.port = 6616;
-//exports.myUrl = 'wss://mydomain.com/bb';
+exports.port = 9196;
+//exports.myUrl = 'ws://10.10.11.68:9191';
 exports.bServeAsHub = true;
 exports.bSaveJointJson = true;
 exports.bLight = false;
@@ -20,10 +20,18 @@ exports.bugs_from_email = 'bugs@example.org';
 
 exports.HEARTBEAT_TIMEOUT = 300*1000;
 
+exports.initial_peers = [
+    "ws://dev.mainchain.pow.trustnote.org:9191",
+];
+
 exports.storage = 'sqlite';
 
+exports.deviceName = 'Supernode';
+exports.permanent_pairing_secret = 'randomstring';
+exports.control_addresses = ['DEVICE ALLOWED TO CHAT'];
+exports.payout_address = 'WHERE THE MONEY CAN BE SENT TO';
 
-exports.initial_witnesses = [
+exports.initialWitnesses = [
     "JNA6YWLKFQG7PFF6F32KTXBUAHRAFSET",
     "4T7YVRUWMVAJIBSWCP35C7OGCX33SAYO",
     "A4BRUVOW2LSLH6LVQ3TWFOCAM6JPFWOK",
@@ -35,7 +43,11 @@ exports.initial_witnesses = [
     "ZW35QKXIKK47A7HW3YRIV6TU3DYDTIVR"
 ];
 
-exports.initial_peers = [
-];
+exports.bSingleAddress = true;
+exports.THRESHOLD_DISTANCE = 2;
+exports.MIN_AVAILABLE_WITNESSINGS = 100;
+exports.bPostTimestamp = false;
 
-console.log('finished hub conf');
+exports.KEYS_FILENAME = 'keys.json';
+
+console.log('finished witness conf');

@@ -2,15 +2,19 @@ home_path="$HOME"
 source_path="$home_path/mainchain-pow/testnet-pow-builder"
 project_prefix_name="trustnote-pow-supernode"
 config_path="$home_path/.config"
+backupconfigs_path="$source_path/backupconfigs"
 
 update_trustnote_pow_code(){
     project_name="$2$3"
     echo "update $project_name code"
 
     cd "$1/$project_name/"
+    git checkout .
     git pull
-    rm -rf "$1/$project_name/node_modules/trustnote-pow-common"
-    npm install
+    #rm -rf "$1/$project_name/node_modules/trustnote-pow-common"
+    #npm install
+
+    cp -rf "$backupconfigs_path/$project_name/"* "$1/$project_name/"
     cd "$1"
 }
 
@@ -48,8 +52,8 @@ start_part_supernode(){
     update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-supernode" "9" &
 }
 
-start_all_supernode
-#start_part_supernode
+#start_all_supernode
+start_part_supernode
 
 update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-headless" "10"
 update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-explorer" "1"
