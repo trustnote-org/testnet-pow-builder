@@ -95,7 +95,7 @@ start_part_supernode_by_copy(){
 #update_trustnote_pow "$source_path" "$config_path" "trustnote-pow-explorer" "1"
 
 start_all_supernode_by_copy
-start_part_supernode_by_copy
+#start_part_supernode_by_copy
 
 update_trustnote_pow_by_copy "$source_path" "$config_path" "trustnote-pow-headless" "10"
 update_trustnote_pow_by_copy "$source_path" "$config_path" "trustnote-pow-explorer" "1"
