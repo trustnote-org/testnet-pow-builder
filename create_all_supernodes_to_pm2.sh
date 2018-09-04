@@ -1,3 +1,6 @@
+pm2 stop all
+pm2 delete all
+
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode1/start.js --no-autorestart --name supernode1
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode2/start.js --no-autorestart --name supernode2
 pm2 start ~/mainchain-pow/testnet-pow-builder/trustnote-pow-supernode3/start.js --no-autorestart --name supernode3
