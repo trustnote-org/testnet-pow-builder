@@ -11,8 +11,8 @@ var ecdsaSig = require('trustnote-pow-common/signature.js');
 var validation = require('trustnote-pow-common/validation.js');
 var headlessWallet = require('../start');
 
-const witness_budget = 1000000;
-const witness_budget_count = 8;
+const witness_budget = 10000000;
+const witness_budget_count = 10;
 const genesisConfigFile = "../../data/config.json";
 const creation_message = "梦想从这里开始!，Dream begins here!"
 
