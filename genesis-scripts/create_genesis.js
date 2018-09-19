@@ -11,8 +11,8 @@ var ecdsaSig = require('trustnote-common/signature.js');
 var validation = require('trustnote-common/validation.js');
 var headlessWallet = require('trustnote-headless');
 
-const witness_budget = 1000000;
-const witness_budget_count = 8;
+const witness_budget = 10000000;
+const witness_budget_count = 10;
 const genesisConfigFile = "../../data/config.json";
 const creation_message = "梦想从这里开始!，Dream begins here!"
 
@@ -20,7 +20,7 @@ var genesisConfigData = {};
 var witnesses = [];
 var allAddress = [];
 var arrOutputs = [
-    {address: "IO3JFSLJQVS4GNWR6I4QYIPBYGIUF3ZF", amount: 0 } //第一笔，找零地址。
+    {address: "DE4TWPGWD2BH7DMIMMZIMRBWRZSRQF2D", amount: 0 } //第一笔，找零地址。
 ];
 
 var contenta = fs.readFileSync('../../data/allAddress.json');
@@ -31,7 +31,7 @@ allAddress = JSON.parse(contenta);
 
 console.log(JSON.stringify(witnesses));
 
-for (let address of allAddress) {           // initial the payment arrOutputs
+for (let address of witnesses) {           // initial the payment arrOutputs
     for(var i=0; i<witness_budget_count; ++i) {
         arrOutputs.push({address: address, amount: witness_budget});
     }
@@ -49,8 +49,8 @@ function createPayment(from_address){
         }
     });
 
-    var from_address = "IO3JFSLJQVS4GNWR6I4QYIPBYGIUF3ZF";
-    var payee_address = "XIM76DRNUNFWPXPI5AGOCYNMA3IOXL7V";
+    var from_address = "DE4TWPGWD2BH7DMIMMZIMRBWRZSRQF2D";
+    var payee_address = "35IBRHWGTXLRJNRFRD2MIKTQSBJIIJBZ";
     var arrOutputs = [
         {address: from_address, amount: 0},      // the change
         {address: payee_address, amount: 100}  // the receiver
