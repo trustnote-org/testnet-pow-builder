@@ -39,8 +39,8 @@ for (let address of witnesses) {           // initial the payment arrOutputs
 
 function createPayment(from_address){
     console.log('starting createPayment');
-    var composer = require('trustnote-pow-common/composer.js');
-    var network = require('trustnote-pow-common/network.js');
+    var composer = require('trustnote-pow-common/unit/composer.js');
+    var network = require('trustnote-pow-common/p2p/network.js');
     var callbacks = composer.getSavingCallbacks({
         ifNotEnoughFunds: onError,
         ifError: onError,
@@ -142,8 +142,8 @@ var signer = {
 };
 
 function createGenesisUnit(witnesses, onDone) {
-    var composer = require('trustnote-pow-common/composer.js');
-    var network = require('trustnote-pow-common/network.js');
+    var composer = require('trustnote-pow-common/unit/composer.js');
+    var network = require('trustnote-pow-common/p2p/network.js');
 
     var savingCallbacks = composer.getSavingCallbacks({
         ifNotEnoughFunds: onError,
