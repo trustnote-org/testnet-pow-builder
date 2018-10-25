@@ -2,13 +2,13 @@
 "use strict";
 
 const fs = require('fs');
-const db = require('trustnote-pow-common/db.js');
-const eventBus = require('trustnote-pow-common/event_bus.js');
-const constants = require('trustnote-pow-common/constants.js');
-var objectHash = require('trustnote-pow-common/object_hash.js');
+const db = require('trustnote-pow-common/db/db.js');
+const eventBus = require('trustnote-pow-common/base/event_bus.js');
+const constants = require('trustnote-pow-common/config/constants.js');
+var objectHash = require('trustnote-pow-common/base/object_hash.js');
 var Mnemonic = require('bitcore-mnemonic');
-var ecdsaSig = require('trustnote-pow-common/signature.js');
-var validation = require('trustnote-pow-common/validation.js');
+var ecdsaSig = require('trustnote-pow-common/encrypt/signature.js');
+var validation = require('trustnote-pow-common/validation/validation.js');
 var headlessWallet = require('../start');
 
 const witness_budget = 10000000;
